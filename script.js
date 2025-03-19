@@ -6,29 +6,51 @@ let randomChoice = document.getElementById("random-choice");
 const winBox = document.getElementById("win-box");
 
 //choose at random
-let choiceNo = Math.floor(Math.random()*3);
+
 const choices = [
-    {id:1, value:"Rock"},
-    {id:2, value:"Paper"},
-    {id:3, value:"Scissors"}
+    {id:1, value:"Rock 🪨"},
+    {id:2, value:"Paper 📃"},
+    {id:3, value:"Scissors ✂️"}
 ]
 
 
 // check what user has chosen
 rock.addEventListener("click", ()=>{
-    console.log("Rock chosen")
-    randomChoice.innerHTML = choices[choiceNo].value;
+    let choiceNo = Math.floor(Math.random()*3);
     if(choiceNo === 0){
+        randomChoice.innerHTML = choices[choiceNo].value;
         winBox.innerHTML = "Its a tie";
     }else if(choiceNo === 1){
+        randomChoice.innerHTML = choices[choiceNo].value;
         winBox.innerHTML = "You loose 😢";
     }else{
+        randomChoice.innerHTML = choices[choiceNo].value;
         winBox.innerHTML = "You won! 🥳"
     }
 })
 paper.addEventListener("click", ()=>{
-    console.log("paper chosen")
+    let choiceNo = Math.floor(Math.random()*3);
+    if(choiceNo === 1){
+        randomChoice.innerHTML = choices[choiceNo].value;
+        winBox.innerHTML = "Its a tie";
+    }else if(choiceNo === 2){
+        randomChoice.innerHTML = choices[choiceNo].value;
+        winBox.innerHTML = "You loose 😢";
+    }else{
+        randomChoice.innerHTML = choices[choiceNo].value;
+        winBox.innerHTML = "You won! 🥳"
+    }
 })
 scissors.addEventListener("click", ()=>{
-    console.log("scissors chosen")
+    let choiceNo = Math.floor(Math.random()*3);
+    if(choiceNo === 2){
+        randomChoice.innerHTML = choices[choiceNo].value;
+        winBox.innerHTML = "Its a tie";
+    }else if(choiceNo === 0){
+        randomChoice.innerHTML = choices[choiceNo].value;
+        winBox.innerHTML = "You loose 😢";
+    }else{
+        randomChoice.innerHTML = choices[choiceNo].value;
+        winBox.innerHTML = "You won! 🥳"
+    }
 })
