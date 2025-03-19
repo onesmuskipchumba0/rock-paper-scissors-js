@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Choose an option from the buttons below</h2>
+    <h1 class="game-title">🎮 Rock Paper Scissors 🎮</h1>
+    <h2>Make your move!</h2>
     <div id="buttons-div">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <button id="rock">🪨</button>
+        <button id="paper">📃</button>
+        <button id="scissors">✂️</button>
     </div>
     <div id="choice-div">
-        <h3>Computer Choose: <span id="random-choice"></span></h3>
-        <h2 id="win-box">You won!</h2>
+        <h3>Computer chose: <span id="random-choice">Waiting...</span></h3>
+        <h2 id="win-box">Ready to play!</h2>
     </div>
 </body>
 <script src="script.js"></script>
