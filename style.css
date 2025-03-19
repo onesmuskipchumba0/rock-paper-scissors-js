@@ -5,3 +5,31 @@ body{
     align-items: center;
 }
 
+div{
+    width: 100%;
+}
+button{
+    width: 33%;
+    height: 68px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#rock{
+    background-color: greenyellow;
+}
+#paper{
+    background-color: rgb(255, 149, 0);
+}
+#scissors{
+    background-color: rgb(0, 206, 252);
+}
+#choice-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+}
